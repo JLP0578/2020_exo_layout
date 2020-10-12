@@ -1,0 +1,72 @@
+/***********************************/
+/*              DEFAULT            */
+/***********************************/
+    #TypeMedia::before{content: "Vue Desktop > 1370 px";}
+
+    * {
+        margin:0;
+        padding:0;
+    }
+    h1{
+        text-align:center;
+        margin:20px;
+    }
+    p{
+        text-align:center;
+        margin:20px;
+    }
+    .img{
+        width:100%;
+        height:auto;
+        padding-top:10px;
+    }
+    .floatR{
+        float: right;
+        max-width:50%;
+        width:100%;
+        height: auto;
+    }
+    .floatL{
+        float: left;
+        max-width:50%;
+        width:100%;
+        height: auto;
+    }
+    .divCenter{
+        margin:0 auto;
+        max-width:70%;
+    }
+/***********************************/
+/*             DESKTOP             */
+/***********************************/
+@media screen and (max-width: 1370px)
+{
+    #TypeMedia::before{content: "Vue Desktop";}
+    .floatR{max-width:400px;}
+    .floatL{max-width:400px;}
+    .divCenter{max-width:85%;}
+}
+/***********************************/
+/*             TABLETTE            */
+/***********************************/
+@media screen and (min-width: 768px) and (max-width: 970px)
+{
+    #TypeMedia::before{content: "Vue Tablette à 769 px";}
+    .floatR{max-width:350px;}
+    .floatL{max-width:350px;}
+    .divCenter{max-width:740px;}
+}
+/***********************************/
+/*            TELEPHONE            */
+/***********************************/
+@media screen and (max-width: 768px)
+{
+    #TypeMedia::before{content: "Vue Téléphone à 320 px";}
+    .floatR{max-width:768px;}
+    .floatL{max-width:768px;}
+    .divCenter{max-width:80%;}
+}
+
+
+
+
